@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enid Dev Website</title>
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;900&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="css/style.css">
+    
     </head>
     <body>
         <header>
             <div class="logo">
-                <img src="#" alt="MY LOGO">        
+                <img src="img/E(1).png" alt="my logo">        
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -22,8 +28,8 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="home" class="nav__link">HOME</a></li>
                         <li class="nav__item"><a href="tech-stack" class="nav__link">TECH STACK</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">ABOUT ME</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">My PROJECTS</a></li>
+                        <li class="nav__item"><a href="about" class="nav__link">ABOUT ME</a></li>
+                        <li class="nav__item"><a href="projects" class="nav__link">My PROJECTS</a></li>
                     </ul>
                 </nav>
         </header>
@@ -34,8 +40,8 @@
             <h1 class="section__title section__title--intro">
                 Hi, I'm <strong>Enid Svymbersky</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Software Developer | Technical Support</p>
-            <img src="img/my-image.png.png" alt="">
+            <p class="section__subtitle section__subtitle--intro">Full-Stack Dev | Tech Support Manager</p>
+            <img src="img/enid.png" alt="profile image" class="intro__img">
         </section>
 
         <!-- Tech Stack -->
@@ -43,35 +49,35 @@
             <h2 class="section__title section__title--tech-stack">Tech Stack</h2>
 
             <div class="technology-stack">
-                <div class="Front-end">
+                <div class="column">
                     <h3>Front-end</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div> <!--front-end tech-->
         
-                <div class="back-end">
+                <div class="column">
                     <h3>Back-end</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div> <!--back-end tech-->
-                <div class="other-tech">
+                <div class="column">
                     <h3>Other Skills</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div> <!--other tech-->
 
             </div>
-            <a href="projects" class="btn">My Projects</a>
+            <a href="projects" class="btn">See My Projects</a>
         </section> 
 
         <!-- About Me -->
         <section class="about-me" id="about">
             <h2 class="section__title section__title--about">Who I am</h2>
-            <p class="section__subtitle section__subtitle--about"></p>
+            <p class="section__subtitle section__subtitle--about">A Tech Support Engineer blah blah</p>
 
             <div class="about-me__body">
-                <p></p>
-                <p></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
 
-            <img src="img/my-image.png.png" alt="">
+            <img src="img/enid400.JPG" alt="image in front of ruins" class="about-me__img">
 
         </section>
 
@@ -101,6 +107,19 @@
 
                 </div>
             </section>
+
+            <!-- footer -->
+            <footer>
+                <a href="mailto:enid.sky@protonmail.com" class="footer__link">enid.sky@protonmail.com</a>
+                <ul class="social-list">
+                    <li class="social-list__item"> <a class="social-list__link" href="#">a</a>
+                    <li class="social-list__item"> <a class="social-list__link" href="#">b</a>
+                    <li class="social-list__item"> <a class="social-list__link" href="#">c</a>
+                    <li class="social-list__item"> <a class="social-list__link" href="#">d</a>
+                    </li>
+                </ul>
+            </footer>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         
     </body>
 </html>
