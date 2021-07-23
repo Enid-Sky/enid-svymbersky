@@ -18,22 +18,49 @@
     <link rel="stylesheet" href="css/style.css">
     
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <header>
-            <div class="logo">
-                <img src="img/E(1).png" alt="my logo">        
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-                <nav class="nav">
+            <!-- Navigation Bar -->
+                <nav id="nav" class="navbar navbar-expand-xl navbar-light sticky-top" >
+                    <img id="brand-image" alt="brand" src="img/E(1).png">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav">
+                        <span class="navbar-toggler-icon"></span>   
+                        </button>
+                        <div class="collapse navbar-collapse" id="colNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tech-stack">Tech Stack</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#projects">My Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#footer">Contact Me</a>
+                                </li>
+
+                
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+      
+             
+  <!-- End of Navigation Bar -->
+                <!-- <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="home" class="nav__link">HOME</a></li>
                         <li class="nav__item"><a href="tech-stack" class="nav__link">TECH STACK</a></li>
                         <li class="nav__item"><a href="about" class="nav__link">ABOUT ME</a></li>
                         <li class="nav__item"><a href="projects" class="nav__link">My PROJECTS</a></li>
                     </ul>
-                </nav>
+                </nav> -->
         </header>
 
     <!-- Introduction -->
@@ -51,20 +78,39 @@
             <h2 class="section__title section__title--tech-stack">Tech Stack</h2>
 
             <div class="technology-stack">
-                <div class="column">
-                    <h3>Front-end</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!--front-end tech-->
+                <div class="card-deck">
+
+                    <ul class="tech__card">      
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>SASS</li>
+                        <li>Flexbox</li>
+                        <li>Grid</li>
+                        <li>bootstrap</li>
+                    </ul>
+
+
+                    <ul class="tech__card">
+                        <li>Javascript</li>
+                        <li>React</li>
+                        <li>Python</li>
+                        <li>flask</li>
+                        <li>node.js</li>
+                        <li>express</li>
+
+                    </ul>
+                
+
+                    <ul class="tech__card">
+                        <li>PostgreSQL</li>
+                        <li>SQLAlchemy</li>
+                        <li>mySQL</li>
+                        <li>Git</li>
+                        <li>Command Line</li>
+                        <li>Docker</li>
+                    </ul>
         
-                <div class="column">
-                    <h3>Back-end</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-
-                </div> <!--back-end tech-->
-                <div class="column">
-                    <h3>Other Skills</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
                 </div> <!--other tech-->
 
             </div>
@@ -134,17 +180,21 @@
             </section>
 
             <!-- footer -->
-            <footer>
-                <a href="mailto:enid.sky@protonmail.com" class="footer__link">enid.sky@protonmail.com</a>
+            <footer class="footer" id=footer>
+
+                <a href="mailto:enid.sky@protonmail.com" class="footer__link">Contact Me</a>
                 <ul class="social-list">
-                    <li class="social-list__item"> <a class="social-list__link" href="#">a</a>
-                    <li class="social-list__item"> <a class="social-list__link" href="#">b</a>
-                    <li class="social-list__item"> <a class="social-list__link" href="#">c</a>
-                    <li class="social-list__item"> <a class="social-list__link" href="#">d</a>
+                    <li class="social-list__item"> 
+                        <a class="social-list__link" href="https://github.com/Enid-Sky"><i class="fab fa-github"></i></a>
+                    <li class="social-list__item"> 
+                        <a class="social-list__link" href="https://www.linkedin.com/in/enid-svymbersky/"><i class="fab fa-linkedin"></i></a>
+                    <li class="social-list__item"> 
+                        <a class="social-list__link" href="mailto:enid.sky@protonmail.com"><i class="fas fa-envelope"></i>
+                        </a>
                     </li>
                 </ul>
+                <div class="made-by-me">Site by Enid Gonzalez Svymbersky</div>
             </footer>
-            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         
 
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
