@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <title>Enid Dev Website</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
@@ -16,22 +18,49 @@
     <link rel="stylesheet" href="css/style.css">
     
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <header>
-            <div class="logo">
-                <img src="img/E(1).png" alt="my logo">        
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-                <nav class="nav">
+            <!-- Navigation Bar -->
+                <nav id="nav" class="navbar navbar-expand-xl navbar-light sticky-top" >
+                    <img id="brand-image" alt="brand" src="img/E(1).png">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav">
+                        <span class="navbar-toggler-icon"></span>   
+                        </button>
+                        <div class="collapse navbar-collapse" id="colNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tech-stack">Tech Stack</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About Me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#projects">My Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#footer">Contact Me</a>
+                                </li>
+
+                
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+      
+             
+  <!-- End of Navigation Bar -->
+                <!-- <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="home" class="nav__link">HOME</a></li>
                         <li class="nav__item"><a href="tech-stack" class="nav__link">TECH STACK</a></li>
                         <li class="nav__item"><a href="about" class="nav__link">ABOUT ME</a></li>
                         <li class="nav__item"><a href="projects" class="nav__link">My PROJECTS</a></li>
                     </ul>
-                </nav>
+                </nav> -->
         </header>
 
     <!-- Introduction -->
@@ -49,22 +78,43 @@
             <h2 class="section__title section__title--tech-stack">Tech Stack</h2>
 
             <div class="technology-stack">
-                <div class="column">
-                    <h3>Front-end</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!--front-end tech-->
+                <div class="card-deck">
+
+                    <ul class="tech__card">      
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>SASS</li>
+                        <li>Flexbox</li>
+                        <li>Grid</li>
+                        <li>bootstrap</li>
+                    </ul>
+
+
+                    <ul class="tech__card">
+                        <li>Javascript</li>
+                        <li>React</li>
+                        <li>Python</li>
+                        <li>flask</li>
+                        <li>node.js</li>
+                        <li>express</li>
+
+                    </ul>
+                
+
+                    <ul class="tech__card">
+                        <li>PostgreSQL</li>
+                        <li>SQLAlchemy</li>
+                        <li>mySQL</li>
+                        <li>Git</li>
+                        <li>Command Line</li>
+                        <li>Docker</li>
+                    </ul>
         
-                <div class="column">
-                    <h3>Back-end</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!--back-end tech-->
-                <div class="column">
-                    <h3>Other Skills</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
                 </div> <!--other tech-->
 
             </div>
-            <a href="projects" class="btn">See My Projects</a>
+            <a href="projects" class="btn">See ALL Projects</a>
         </section> 
 
         <!-- About Me -->
@@ -73,8 +123,8 @@
             <p class="section__subtitle section__subtitle--about">A Tech Support Engineer blah blah</p>
 
             <div class="about-me__body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>I have almost a decade of professional experience in tech, and I've been coding for almost two years. Previously, I was the Tech Manager at a digital marketing company specializing in travel tech. In that role, I onboarded clients and worked with developers on travel apps, cruise/hotel booking engines, tools and enhancements... </p>
+                <p>Then one day, I realized how much I love coding and got to work on an exciting new path! Now everyday is filled with magic! As a recent bootcamp grad, I'm currently on the hunt for a technical position where I can serve as a bridge between client needs and technical solutions.</p>
             </div>
 
             <img src="img/enid400.JPG" alt="image in front of ruins" class="about-me__img">
@@ -83,43 +133,72 @@
 
             <!--My Work-->
             <section class="my-projects" id="projects">
-                <h2 class="section__title"> My Projects</h2>
+                <h2 class="section__title--projects"> My Projects</h2>
                 <p class="section__subtitle"></p>
 
                 <div class="portfolio">
+                    <div class="card-deck">
 
-                    <!-- Portfolio Item 01 -->
-                    <a href="#" class="portfolio__item">
-                        <img src="#" alt="portfolio image">
-                    </a>
+                        <!-- Portfolio Item 01 -->
+                        <div class="card">
+                            <img class="card-img-top" src="img/launchcommandUpcoming1.png" class="img-fluid" alt="portfolio image" a>
+                            <div class="card-body">
+                            <h3 class="card-title">Launch Command</h3>
+                            <p class="card-text">Launch Command is a full-stack web app for rocket enthusiasts to find the latest articles on space flight news and get text notifications of upcoming rocket launches.</p>
+                            <p>Python, JavaScript, Jinja2, Flask, SQLAlchemy, PostgreSQL, HTML5, CSS3, Bootstrap4, jQuery, TWILIO.
 
-                
-                    <!-- Portfolio Item 02 -->
-                    <a href="#" class="portfolio__item">
-                        <img src="#" alt="portfolio image">
-                    </a>
+                            </p> 
+                            <a href="#" class="btn">Demo</a>
+                            <a href="https://github.com/Enid-Sky/flask-launch-command" class="btn">Code</a>
+                            </div>
+                        </div>
 
-                    
-                    <!-- Portfolio Item 03 -->
-                    <a href="#" class="portfolio__item">
-                        <img src="#" alt="portfolio image">
-                    </a>
+                        <!-- Portfolio Item 02 -->
+                        <div class="card">
+                            <img class="card-img-top" src="img/senti1.png"  class="img-fluid" alt="portfolio image" a>
+                            <div class="card-body">
+                            <h3 class="card-title">Senti</h3>
+                            <p class="card-text">An asynchronous web app that runs SENTIment analysis on your articles using Natural Language Processing via the AYLIEN API.</p><br>
+                            <p>HTML5, SASS, JavaScript, Node, Express, Webpack, Service Workers, Jest.</p>
+                            <a href="https://github.com/Enid-Sky/Sentiment-Analysis-App" class="btn">Code</a>
+                            </div>
+                        </div>
 
+
+                        <!-- Portfolio Item 03 -->
+                        <div class="card">
+                            <img class="card-img-top" src="img/blog2.png"  class="img-fluid" alt="portfolio image" a>
+                            <div class="card-body">
+                            <h3 class="card-title">Pour Over Perfect</h3>
+                            <p class="card-text"> Personal coffee blog template. Built  with multiple pages, and uses custom Flexbox and Grid layouts with media queries for a  responsive design quality. </p>
+                            <p class="card-text--03">HTML, CSS, Flexbox, Grid, Media Queries.</p>
+                            <a href="https://github.com/Enid-Sky/blogWebsite" class="btn">Code</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- footer -->
-            <footer>
-                <a href="mailto:enid.sky@protonmail.com" class="footer__link">enid.sky@protonmail.com</a>
+            <footer class="footer" id=footer>
+
+                <a href="mailto:enid.sky@protonmail.com" class="footer__link">Contact Me</a>
                 <ul class="social-list">
-                    <li class="social-list__item"> <a class="social-list__link" href="#">a</a>
-                    <li class="social-list__item"> <a class="social-list__link" href="#">b</a>
-                    <li class="social-list__item"> <a class="social-list__link" href="#">c</a>
-                    <li class="social-list__item"> <a class="social-list__link" href="#">d</a>
+                    <li class="social-list__item"> 
+                        <a class="social-list__link" href="https://github.com/Enid-Sky"><i class="fab fa-github"></i></a>
+                    <li class="social-list__item"> 
+                        <a class="social-list__link" href="https://www.linkedin.com/in/enid-svymbersky/"><i class="fab fa-linkedin"></i></a>
+                    <li class="social-list__item"> 
+                        <a class="social-list__link" href="mailto:enid.sky@protonmail.com"><i class="fas fa-envelope"></i>
+                        </a>
                     </li>
                 </ul>
+                <div class="made-by-me">Site by Enid Gonzalez Svymbersky</div>
             </footer>
-            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
