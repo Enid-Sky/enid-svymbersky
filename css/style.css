@@ -85,6 +85,12 @@ strong {font-weight: var(--fw-bold)}
     transform: scale(1.1);
 }
 
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
 
 section {
     padding: 5em 2em;
@@ -138,9 +144,12 @@ h3 {font-size: var(--fs-h3)}
 
 
 #brand-image {
-    max-width: 5em;
+    max-width: 3em;
     background-color: var(--clr-light);
-    padding: 15px 15px;
+}
+
+.navbar-nav {
+    text-align: center;
 }
 
 /* Intro Section */
@@ -209,10 +218,10 @@ h3 {font-size: var(--fs-h3)}
 
     .intro__img {
         grid-area: img;
-        min-width: 250px;
+        min-width: 200px;
         max-width: 300px;
         z-index:2;
-        border-radius: 10px;;
+        border-radius: 10px;
     }
 
     .section__subtitle--intro {
@@ -237,7 +246,6 @@ h3 {font-size: var(--fs-h3)}
     text-align: center;
     
 }
-
 
 .section__title--tech-stack {
     color: var(--clr-accent);
@@ -299,6 +307,9 @@ h3 {font-size: var(--fs-h3)}
      font-size: var(--fs-h3);
      text-transform: uppercase;
      padding: 10px;
+ }
+ .tech__card:hover {
+    transform: scale(1.1);
  }
  
 
